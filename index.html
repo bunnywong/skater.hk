@@ -16,6 +16,9 @@
       .db { /* debug */
         border: 1px solid pink;
       }
+      .pos-r {
+        position: relative;
+      }
       .btn-lg {
         font-size: 5em;
       }
@@ -28,20 +31,31 @@
       .spacing {
         height: 50px;
       }
+      .section-tag {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+      }
+      .facebook-container .btn {
+        margin: 5px;
+      }
     </style>
   </head>
   <body>
     <div class="container text-center">
 
-      <div class="spacing"></div>
+      <div class="row pos-r">
+        <div class="col-xs-offset-1">
+          <h2 class="text-left">Telegram Group</h2>
+        </div>
 
-      <div class="row">
         <div class="col-xs-12">
           <a href="https://telegram.me/joinchat/CI9YJj0SrDf1uFpPPtMDCw"  target="_blank" class="btn btn-default btn-lg" role="button">🏄滑板谷</a>
         </div>
       </div>
       <div class="row">
-        <input id="v1" type="text" value="https://telegram.me/joinchat/CI9YJj0SrDf1uFpPPtMDCw">
+        <input type="hidden" value="https://telegram.me/joinchat/CI9YJj0SrDf1uFpPPtMDCw">
       </div>
 
       <div class="spacing"></div>
@@ -49,15 +63,41 @@
       <div class="row">
         <a href="https://telegram.me/joinchat/B8hZ2z4Btjs2zVKxIYcvqg"  target="_blank" class="btn btn-default btn-lg" role="button">滑板小谷</a>
         <div class="row">
-          <input type="text" value="https://telegram.me/joinchat/B8hZ2z4Btjs2zVKxIYcvqg">
+          <input type="hidden" value="https://telegram.me/joinchat/B8hZ2z4Btjs2zVKxIYcvqg">
         </div>
       </div>
 
       <div class="spacing"></div>
 
+      <p class="col-xs-offset-1">Download Telegram for <a href="https://telegram.org/dl/android" target="_target">Android</a> | <a href="https://telegram.org/dl/ios" target="_blank">iPhone / iPad</a></p>
       <p><strong>Reference: </strong><a href="http://unwire.hk/2016/03/24/telegram_group_tips/software/" target="_blank">香港人轉玩 Telegram 熱潮 – 點解好過 WhatsApp + FB Messenger?</a></p>
 
+      <hr>
+
+      <div class="row pos-r facebook-container">
+        <div class="col-xs-offset-1">
+          <h2 class="text-left">Facebook Page/Group</h2>
+        </div>
+
+        <a href="https://www.facebook.com/8FIVE2SHOP"  target="_blank" class="btn btn-primary btn-sm" role="button">Eightfivetwo shop</a>
+        <a href="https://www.facebook.com/freelineust"  target="_blank" class="btn btn-info btn-sm" role="button">Freeline UST</a>
+        <a href="https://www.facebook.com/HKfreeline"  target="_blank" class="btn btn-info btn-sm" role="button">FreeLine.HK</a>
+        <a href="https://www.facebook.com/groups/31641025595"  target="_blank" class="btn btn-primary btn-sm" role="button">HKSBC</a>
+        <a href="https://www.facebook.com/groups/1568512993461382"  target="_blank" class="btn btn-success btn-sm" role="button">Hong Kong Roller Club</a>
+        <a href="http://www.meetup.com/hkonwheels/"  target="_blank" class="btn btn-success btn-sm" role="button">HK on Wheels</a>
+        <a href="https://www.facebook.com/groups/hklongboard2010"  target="_blank" class="btn btn-primary btn-sm" role="button">HK Longboard</a>
+        <a href="https://www.facebook.com/o22yskateshop"  target="_blank" class="btn btn-success btn-sm" role="button">O22Y Skate Shop</a>
+        <a href="https://www.facebook.com/proskate.hk"  target="_blank" class="btn btn-success btn-sm" role="button">Pro Skate</a>
+        <a href="https://www.facebook.com/sbdwlongboardshop"  target="_blank" class="btn btn-primary btn-sm" role="button">SBDW Longboard Shop HK</a>
+        <a href="https://www.facebook.com/Travelol-longboard-LTD-455030781242930"  target="_blank" class="btn btn-primary btn-sm" role="button">Travelol longboard LTD</a>
+        <a href="https://www.facebook.com/skatehk"  target="_blank" class="btn btn-primary btn-sm" role="button">Skate City</a>
+        <a href="https://www.facebook.com/groups/155157984571347"  target="_blank" class="btn btn-primary btn-sm" role="button">X Game H.K</a>
+
+      </div>
+
+
     </div><!-- .container -->
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
