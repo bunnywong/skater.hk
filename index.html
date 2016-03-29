@@ -61,6 +61,11 @@
       <p><strong>Reference: </strong><a href="http://unwire.hk/2016/03/24/telegram_group_tips/software/" target="_blank">香港人轉玩 Telegram 熱潮 – 點解好過 WhatsApp + FB Messenger?</a></p>
 
       <hr>
+        <div class="col-xs-offset-1">
+          <h2 class="text-left">Event</h2>
+        </div>
+        <h3><a href="https://www.facebook.com/events/252704775064148/" target="_blank" class="js-color-fire text-center">2015 May - 迪欣湖踩板野餐聚</a></h3>
+      <hr>
 
       <div class="row facebook-container">
         <div class="col-xs-offset-1">
@@ -88,6 +93,17 @@
     </div><!-- .container -->
 
     <script>
+      function colorFire(){
+        var all = document.getElementsByClassName('js-color-fire');
+        for (var i = 0; i < all.length; i++) {
+          all[i].style.color = color[r];
+        }
+        r == color.length - 1 ? r = 0 : r++;
+      }
+      var r = 0;
+      var color = ['lightcoral', 'pink'];
+      setInterval(function(){colorFire()}, 50);
+
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -95,6 +111,7 @@
 
       ga('create', 'UA-75665209-1', 'auto');
       ga('send', 'pageview');
+      // http://www.willpeavy.com/minifier
     </script>
   </body>
 </html>
